@@ -15,12 +15,10 @@ sudo reboot
 
 3. Open blueman's from taskbar Local Services -> Select Network. Check "Network Access Point(NAP)" is enabled and set IP address to 10.1.1.2. Make sure PAN Support and DUN Support is set to Blueman.
 
-4. Copy bluetooth-agent.sh to /etc/init.d
+4. Copy bluetooth-agent.sh to /home/pi, and create it as executable. Then append into /home/pi/.bashrc file, it has to be the last file.
 
 ```
 chmod a+x bluetooth-agent.sh
-cd ../rc3.d
-ln -s ../init.d/bluetooth-agent.sh S02bluetoothagent
 ```
 
 5. Now need to change BLUETOOTH to enable default PIN number exchange,
@@ -49,6 +47,8 @@ vi BluezAgent.py
   ok(0000);
 ```
 
-7. Reboot, then connect from PC for to Bluetooth and wait to find "raspberrypi". After connect in MacOS, you need to right-click "Connect To Network".
+7. Reboot, Make sure Bluetooth is now in "Discoverable".
 
-8. ssh to pi@10.1.1.2
+8. Connect from PC for to Bluetooth and wait to find "raspberrypi". After connect in MacOS, you need to right-click "Connect To Network".
+
+9. ssh to pi@10.1.1.2

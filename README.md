@@ -28,7 +28,7 @@ cd /usr/lib/python3/dist-packages/blueman/main/applet
 vi BluezAgent.py
 ```
 
-6. Modify the scripts to *comment* off to disable ask_passkey, and then set 0000 to ok. 
+6. Modify the scripts to *comment* off dialog box pop ups. Then set 0000 into "ok" function that will start to send default 0000 PIN no. 
 ```
   @AgentMethod
   def RequestPinCode(self, device, ok, err):

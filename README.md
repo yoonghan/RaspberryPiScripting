@@ -1,4 +1,4 @@
-# RaspberryPiScripting
+# Raspberry Pi Scripting
 Scripts to enable Raspberry Pi for connection and configuration
 
 ## Enabling PIN for bluetooth PAN connection
@@ -47,7 +47,7 @@ vi BluezAgent.py
   ok(0000);
 ```
 
-7. Reboot, Make sure Bluetooth is now in "Discoverable".
+7. Reboot, upon GUI start up make sure Bluetooth is now in "Discoverable".
 
 8. Connect from PC for to Bluetooth and wait to find "raspberrypi". After connect in MacOS, you need to right-click "Connect To Network".
 

@@ -48,3 +48,7 @@ vi BluezAgent.py
   #     self.dialog.present_with_time(self.time_func())
   ok(0000);
 ```
+
+7. Reboot, then connect from PC for to Bluetooth and wait to find "raspberrypi". After connect in MacOS, you need to right-click "Connect To Network".
+
+8. ssh to pi@10.1.1.2

@@ -52,3 +52,7 @@ vi BluezAgent.py
 8. Connect from PC for to Bluetooth and wait to find "raspberrypi". After connect in MacOS, you need to right-click "Connect To Network".
 
 9. ssh to pi@10.1.1.2
+
+## Fallback
+
+Use the command "arp -a" to scan network and look for your raspberry pi. But this only works for tcp/ip
